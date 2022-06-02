@@ -1,0 +1,17 @@
+
+  <!-- SideBar -->
+  <div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">Gifs App</h3>
+
+    <hr class="text-light">
+    <div class="list-group list-reset">
+      <a href="#" 
+      *ngFor="let busqueda of historialFromService"
+      (click)="buscar(busqueda)"
+      class="list-group-item list-group-item-action">
+      {{busqueda | titlecase}}
+      </a>
+     
+  
+  </div>
+  <!-- End SideBar -->
